@@ -1,4 +1,4 @@
-class Mensagem {
+class Mensagem1 {
     remetente: string;
 
     constructor(remetente: string) {
@@ -10,7 +10,7 @@ class Mensagem {
     }
 }
 
-class Email extends Mensagem {
+class Email2 extends Mensagem1 {
     destinatario: string;
     assunto: string;
     corpo: string;
@@ -30,7 +30,7 @@ class Email extends Mensagem {
     }
 }
 
-class SMS extends Mensagem {
+class SMS1 extends Mensagem1 {
     destinatario: string;
     mensagem: string;
    
@@ -50,8 +50,8 @@ class SMS extends Mensagem {
 
 //Exemplo de uso das classes
 
-const email = new Email('remetente@exemplo.com', 'destinatario@exemplo.com', 'Assunto exemplo', 'Corpo exemplo');
-email.enviar();
+const email1 = new Email('remetente@exemplo.com', 'destinatario@exemplo.com', 'Assunto exemplo', 'Corpo exemplo');
+email1.enviar();
 
-const sms = new SMS('remetente', 'destinatario', 'Olá, tudo bem?');
-sms.enviar();
+const sms1 = new SMS('remetente', 'destinatario', 'Olá, tudo bem?');
+sms1.enviar();
