@@ -34,6 +34,6 @@ class PagamentoPixErrado implements ProcessadorPagamento {
     };
 }
 
-const metodoPagamento = new PagamentoCartaoErrado();
-const pagar = new PagamentoErrado(metodoPagamento);
-pagar.pagar();
+// const metodoPagamento = new PagamentoCartaoErrado();
+// const pagar = new PagamentoErrado(metodoPagamento);
+// pagar.pagar();
